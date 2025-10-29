@@ -8,6 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const organizationName = "Coderius-Education";
+const projectName = "DVWA";
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Home',
@@ -19,17 +22,18 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://${organizationName}.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Coderius', // Usually your GitHub org/user name.
-  projectName: 'Coderius-DVWA', // Usually your repo name.
+  organizationName: 'Coderius-Education', // Usually your GitHub org/username.
+	projectName: 'DVWA', // Usually your repo name.
 
   onBrokenLinks: 'throw',
+
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
