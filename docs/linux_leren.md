@@ -5,6 +5,15 @@ displayed_sidebar: null
 ---
 
 # Het besturingssysteem Linux leren
+Om te leren over cybersecurity is het belangrijk dat we eerst het besturingssysteem Linux leren.
+Waarschijnlijk ben je vooral gewend met het besturingssysteem Windows.
+
+## Linux commando's online kunnen proberen.
+
+Ga naar [de volgende website](https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192).
+Als het goed is, opent er zich een site met een zwart scherm waarin je kan typen.
+
+## Leren over Linux
 Je kunt kiezen uit twee routes voor het leren van Linux:
 - via een [video](https://youtu.be/gd7BXuUQ91w)
 - via het lezen en nadoen van [een website](https://labex.io/lesson/the-shell)

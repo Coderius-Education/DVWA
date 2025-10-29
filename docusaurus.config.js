@@ -73,15 +73,22 @@ const config = {
         title: 'Coderius-DVWA',
         items: [
           {
-            to: 'docs/installatie',
-            label: 'WSL installeren',
-            position: 'left',
-          },
-          {
             to: 'docs/linux_leren',
             label: 'Linux leren',
             position: 'left',
           },
+          {
+            to: 'docs/installatie',
+            label: 'WSL installeren',
+            position: 'left',
+          },
+
+          {
+            to: 'docs/dvwa_installatie',
+            label: 'DVWA installeren',
+            position: 'left',
+          },
+
           {
             to: 'docs/cheatsheet',
             label: 'Cheatsheet',
