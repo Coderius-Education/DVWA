@@ -78,6 +78,11 @@ const config = {
             position: 'left',
           },
           {
+            to: 'docs/linux_leren',
+            label: 'Linux leren',
+            position: 'left',
+          },
+          {
             to: 'docs/cheatsheet',
             label: 'Cheatsheet',
             position: 'left',
