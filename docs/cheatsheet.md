@@ -37,3 +37,12 @@ http://localhost/dvwa
 
 De gebruikersnaam is `admin` en het wachtwoord is `password`.
 </details>
+
+<details>
+    <summary>Wat stel ik nog in na de installatie?</summary>
+
+Nog twee dingen:
+1. Klik in het scherm `Setup / Reset DB` op de knop `Create / Reset database` onderaan de pagina.
+2. Klik in het menu op `DVWA Security` en kies daar `low` en klik op `Submit`.
+
+</details>

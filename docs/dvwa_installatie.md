@@ -25,8 +25,4 @@ Tips:
 - bij `Enter SQL password (press Enter for no password):` --> druk op Enter
 
 ## Hoe start ik DVWA?
-Kijk in de [Cheatsheet](cheatsheet.md) voor het opstarten van DVWA en hierop inloggen.
-Kom daarna terug naar deze pagina.
-
-## Wat moet ik nog instellen?
-Klik in het scherm `Setup / Reset DB` op de knop `Create / Reset database` onderaan de pagina.
+Kijk in de [Cheatsheet](cheatsheet.md) voor het opstarten, inloggen en instellen op DVWA.
