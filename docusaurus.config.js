@@ -48,16 +48,33 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        // Default instance for the existing 'docs' folder
         docs: {
+          id: 'default',
+          path: 'docs',
+          routeBasePath: 'docs',
+          sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        blog: false, // I see you don't have a blog, so we can disable it.
         theme: {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'dvwa_tutorial', // Unique ID for this instance
+        path: 'dvwa_tutorial', // Path to the new docs folder
+        routeBasePath: 'dvwa_tutorial', // URL base path for this section
+      },
     ],
   ],
 
@@ -86,6 +103,12 @@ const config = {
           {
             to: 'docs/dvwa_installatie',
             label: 'DVWA installeren',
+            position: 'left',
+          },
+
+          {
+            to: 'dvwa_tutorial/command_injection/low', // Link to the new section
+            label: 'DVWA challenges',
             position: 'left',
           },
 
