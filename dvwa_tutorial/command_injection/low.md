@@ -12,13 +12,13 @@ Bekijk onderstaande video om een idee te krijgen van wat dit commando doet:
 <iframe width="920" height="517" src="https://www.youtube.com/embed/xIT0yrYsyWY" title="The ping command in 60 seconds or less" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## De opdracht
-Start `DVWA` en ga naar de challenge `Command Injection`. Zorg dat je `DVWA Security` òp `low` hebt staan.
+Start `DVWA` en ga naar de challenge `Command Injection`. Zorg dat je `DVWA Security` op `low` hebt staan.
 Ben je vergeten hoe dit moest? Ga dan naar de [cheatsheet](../../docs/cheatsheet).
 
 
-1. Begin met het invullen van een IP adres in het formulier en bekijk de output (bijvoorbeeld `127.0.0.1`)
-2. Bedenk hoe je twee Linux commando's op 1 regel kan laten uitvoeren
-3. Bedenk nu een "IP adres" waardoor het ping commando nog steeds lukt, maar ook een tweede linux commando wordt uitgevoerd (bijvoorbeeld `ls`)
+1. Begin met het invullen van een IP-adres in het formulier en bekijk de output (bijvoorbeeld `127.0.0.1`).
+2. Bedenk hoe je twee Linux-commando's op één regel kunt uitvoeren.
+3. Bedenk nu een "IP-adres" waardoor het ping-commando nog steeds slaagt, maar ook een tweede Linux-commando wordt uitgevoerd (bijvoorbeeld `ls`).
 
 Het resultaat van een succesvolle poging zie je hieronder:
 
