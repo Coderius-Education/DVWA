@@ -13,12 +13,12 @@ Bekijk onderstaande video om een idee te krijgen van wat dit commando doet:
 
 ## De opdracht
 Start `DVWA` en ga naar de challenge `Command Injection`. Zorg dat je `DVWA Security` op `low` hebt staan.
-Ben je vergeten hoe dit moest? Ga dan naar de [cheatsheet](../../docs/cheatsheet).
+Ben je vergeten hoe dit moet? Ga dan naar de [cheatsheet](../../docs/cheatsheet).
 
 
-1. Begin met het invullen van een IP-adres in het formulier en bekijk de output (bijvoorbeeld `127.0.0.1`).
+1. Vul een IP-adres in (bijvoorbeeld `127.0.0.1`) en bekijk de output.
 2. Bedenk hoe je twee Linux-commando's op één regel kunt uitvoeren.
-3. Bedenk nu een "IP-adres" waardoor het ping-commando nog steeds slaagt, maar ook een tweede Linux-commando wordt uitgevoerd (bijvoorbeeld `ls`).
+3. Bedenk nu een invoer die start met een IP-adres, waardoor het `ping`-commando slaagt en er ook een tweede Linux-commando (zoals `ls`) wordt uitgevoerd.
 
 Het resultaat van een succesvolle poging zie je hieronder:
 
