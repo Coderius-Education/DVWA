@@ -42,8 +42,15 @@ Als het goed is, zie je het volgende verschijnen in Windows Powershell:
 Standaardversie: 2
 ```
 
+Mocht je dit niet zien, kan het zijn dat WSL nog niet geïnstalleerd is op je computer. Draai dan het volgende commando:
+
+```powershell
+wsl.exe --install
+```
+
 ## Installeer Linux
-Met het volgende commando zou je Linux moeten kunnen installeren op je computer:
+Open wederom `Windows Powershell` en kies ervoor om deze als administrator uit te voerne.
+Met het volgende commando zou je Linux moeten kunnen installeren op je computer.
 
 ```
 wsl --install kali-linux
@@ -53,7 +60,12 @@ Tips:
 2. Je wordt bij het installeren gevraagd om `een gebruikersnaam` en `wachtwoord`. Onthoud deze!
 
 ## Controleren of de installatie gelukt is
-Zoek op je computer naar WSL en open deze.
+Open `Windows Powershell` en typ het volgende commando:
+
+```powershell
+wsl -d kali-linux
+```
+
 Als het goed is zie je een afbeelding die erg lijkt op degene hieronder:
 
 ![kali_linux](kali_linux_succes.png)

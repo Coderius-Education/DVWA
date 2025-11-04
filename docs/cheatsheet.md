@@ -10,7 +10,10 @@ displayed_sidebar: null
 <details>
     <summary>Hoe start ik WSL op?</summary>
 
-- Zoek op je computer naar `WSL` en open het programma.
+Open `Windows Powershell` en voer het volgende commando uit:
+```powershell
+wsl -d kali-linux
+```
 </details>
 
 ## DVWA
