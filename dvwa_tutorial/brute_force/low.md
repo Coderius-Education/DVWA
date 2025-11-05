@@ -29,7 +29,7 @@ sudo apt install hydra wordlists && sudo gunzip /usr/share/wordlists/rockyou.txt
 2. Druk op F12 om de browser "inspector" weer te geven
 3. Kies bovenin het tabje "Application"
 4. Navigeer in het menu aan de linkerkant naar "Cookies" -> "http://localhost"
-5. Hier staat een cookie met de naam `PHPSESSID`. Bewaar de "value", deze heb je later nodig
+5. Hier staat een cookie met de naam `SESSION_ID`. Bewaar de "value", deze heb je later nodig
 
 ## USERVELDNAAM en PASSWORDVELDNAAM
 Bekijk de HTML paginabron van de DVWA brute force login pagina.
@@ -41,9 +41,9 @@ Dit zijn de waardes van `USERVELDNAAM` en `PASSWORDVELDNAAM`.
 Welk bericht krijg je te zien als het niet lukt om in te loggen? Kies één woord uit dit bericht als waarde voor `FOUTMELDING`
 
 ## Commando invullen
-Kopieer onderstaand commando en vervang: `USERVELDNAAM`, `PASSWORDVELDNAAM`, `PHPSESSID` en `FOUTMELDING`. Verander alleen die vier onderdelen. Draai vervolgens het commando.
+Kopieer onderstaand commando en vervang: `USERVELDNAAM`, `PASSWORDVELDNAAM`, `SESSION_ID` en `FOUTMELDING`. Verander alleen die vier onderdelen. Draai vervolgens het commando.
 ```
-hydra -l admin -P /usr/share/wordlists/rockyou.txt -m '/DVWA/vulnerabilities/brute/:USERVELDNAAM=^USER^&PASSWORDVELDNAAM=^PASS^&Login=Login:H=Cookie:PHPSESSID=<Session ID>:F=FOUTMELDING' localhost http-get-form
+hydra -l admin -P /usr/share/wordlists/rockyou.txt -m '/DVWA/vulnerabilities/brute/:USERVELDNAAM=^USER^&PASSWORDVELDNAAM=^PASS^&Login=Login:H=Cookie:PHPSESSID=SESSION_ID:F=FOUTMELDING' localhost http-get-form
 ```
 
 Als het goed gaat, zie je:
