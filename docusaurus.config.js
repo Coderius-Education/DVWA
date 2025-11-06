@@ -22,10 +22,10 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: `https://${organizationName}.github.io`,
+  url: `https://dvwa.coderius.nl`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: `/DVWA/`,
+  baseUrl: `/`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -54,10 +54,7 @@ const config = {
           path: 'docs',
           routeBasePath: 'docs',
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
         blog: false, // I see you don't have a blog, so we can disable it.
         theme: {
