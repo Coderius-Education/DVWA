@@ -30,7 +30,7 @@ sudo systemctl start apache2.service
 Ga vervolgens naar een browser (bijvoorbeeld Google Chrome) en ga naar de volgende url:
 
 ```
-http://localhost/dvwa
+http://localhost/DVWA
 ```
 
 </details>
