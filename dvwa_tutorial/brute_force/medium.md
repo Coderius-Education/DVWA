@@ -34,4 +34,4 @@ werkt nog steeds bij `medium`.
 
 Dit gaat in deze opdracht goed omdat het password heel eenvoudig is en relatief 'bovenaan'
 de lijst van te proberen passwords staat. Als het om een ingewikkeld password gaat ergens aan het einde van de lijst, zou het uren
-of zelfs dagen kunnen gaan duren.
+of zelfs dagen kunnen gaan duren. Ook weten we hier de login naam al (admin), maar dat is in een 'real life' situatie vaak niet het geval.
