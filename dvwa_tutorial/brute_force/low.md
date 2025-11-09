@@ -49,3 +49,5 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt -m '/DVWA/vulnerabilities/bru
 Als het goed gaat, zie je:
 
 ![succes](low_success.png)
+
+> ⚠️ **_Let op:_** Als er meer dan 1 resultaat verschijnt (dus meerdere kloppende passwords) is je commando niet goed! Er is maar 1 werkend password.
