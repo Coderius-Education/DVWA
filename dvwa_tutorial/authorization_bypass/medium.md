@@ -55,5 +55,15 @@ vulnerabilities/authbypass/change_user_details.php
 - Bij de eerste pagina zal je de user-data zien in een formaat dat je misschien bekend voorkomt
 - Bij de tweede pagina is het mogelijk om diezelfde data terug te sturen en zo de gebruikersgegevens aan te passen.
 
-Probeer nu in de developer tools de `change_user_details.php` pagina zo aan te roepen dat je de gegevens van een andere gebruiker aanpast.
-(Bijvoorbeeld de achternaam).
+Probeer met cURL de `change_user_details.php` pagina zo aan te roepen dat je de gegevens van een andere gebruiker aanpast.
+(Bijvoorbeeld de achternaam). Als basis gebruik je het cURL commando die je met `copy as cURL` hebt gemaakt.
+Om er een POST van de maken met JSON data, heb je 2 extra parameters nodig:
+
+`-X POST`: Om een POST request te maken<br/>
+`-d '{}`: Om data (in dit geval in JSON formaat) te sturen naar de pagina.
+
+Als het is gelukt, krijg je van de change_user_details pagina het volgende terug:
+
+```
+{"result": "ok"}
+```
