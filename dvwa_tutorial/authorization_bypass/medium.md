@@ -17,16 +17,34 @@ Laten we eerst `Network Tools` in je browser eens wat beter bekijken:
 - Ga in je browser naar `http://localhost/DVWA/vulnerabilities/authbypass/`
 - Welke foutmelding zie je bij `Network activity` (zie video hierboven)?
 
-## Burpsuite
-- Download [Burp Suite Community Edition](https://portswigger.net/burp/communitydownload)
-- Open het programma `Burp Suite Community Edition`
+## Voorkennis
+Om deze opdracht te kunnen voltooien, heb je wat voorkennis nodig:
+- **Het dataformaat JSON** (JavaScript Object Notation): Een formaat dat veel wordt gebruikt voor het uitwisselen van informatie tussen digitale systemen
+Bekijk dit filmpje om te leren hoe dit formaat werkt:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cj3h3Fb10QY?si=Z-dwudhjEVD9VcEb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+- **De basis van het HTTP protocol**, en dan met name de GET en POST methods, en hoe je met een POST data naar een website kunt versturen
+Bekijk dit filmpje om te leren over HTTP GET en POST:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tkfVQK6UxDI?si=A3hcptGkAyD2gOIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Hierna kun je verder met de opdracht.
 
 ## De opdracht
-- Ga in de Burp Suite browser naar `http://localhost/DVWA/vulnerabilities/authbypass/`
+Probeer de foutmelding die je kreeg bij 'Het probleem snappen' te omzeilen. De bedoeling is om met een 'gewone' gebruiker die
+geen `admin` rechten heeft toch de gegevens van andere gebruikers aan te passen. Door een fout in de DVWA website is dit nog steeds mogelijk.
 
-Volg onderstaande tutorial:
-<iframe width="813" height="457" src="https://www.youtube.com/embed/Nr2fYpStshA" title="Intercept HTTP traffic with Burp Proxy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+De fout zit hem in deze 2 pagina's van de DVWA web applicatie:
 
+```
+vulnerabilities/authbypass/get_user_data.php 
+vulnerabilities/authbypass/change_user_details.php
+```
 
-## De walkthrough
-<iframe width="920" height="517" src="https://www.youtube.com/embed/Qcgu34eWQa4?start=313" title="15 - Authorisation Bypass (low/med/high) - Damn Vulnerable Web Application (DVWA)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+- Bekijk deze pagina's eens in je webbrowser.
+- Bij de eerste pagina zal je de user-data zien in een formaat dat je misschien bekend voorkomt
+- Bij de tweede pagina is het mogelijk om diezelfde data terug te sturen en zo de gebruikersgegevens aan te passen.
+
+Probeer nu in de developer tools de `change_user_details.php` pagina zo aan te roepen dat je de gegevens van een andere gebruiker aanpast.
+(Bijvoorbeeld de achternaam).
