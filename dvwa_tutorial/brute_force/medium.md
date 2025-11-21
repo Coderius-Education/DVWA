@@ -4,7 +4,7 @@ sidebar_label: 'Medium en High'
 doc_id: dvwa_tutorial/brute_force/medium
 ---
 
-# Medium
+# Medium en High
 Start `DVWA` en ga naar de challenge `Brute Force`. Zorg dat je `DVWA Security` op `medium` hebt staan.
 Ben je vergeten hoe dit moet? Ga dan naar de [cheatsheet](../../docs/cheatsheet).
 
