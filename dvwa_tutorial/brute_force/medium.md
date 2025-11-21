@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: 'Medium'
+sidebar_label: 'Medium en High'
 doc_id: dvwa_tutorial/brute_force/medium
 ---
 
