@@ -29,6 +29,15 @@ Bekijk dit filmpje om te leren over HTTP GET en POST:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tkfVQK6UxDI?si=A3hcptGkAyD2gOIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+- **De command-line "browser" cURL**: hiermee kun je via de command line een URL opvragen, maar ook een POST sturen. Vanuit de 'developer tools' kun je
+een netwerk request met Copy As cURL kopieren en daarna in je bash shell gebruiken en aanpassen:
+
+![Copy as cURL command](copy-as-curl.png)
+
+Dit filmpje laat zien hoe je met cURL een POST request kunt maken:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nApQ6qN4jzs?si=4E89GaOpHwbw9A6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Hierna kun je verder met de opdracht.
 
 ## De opdracht
