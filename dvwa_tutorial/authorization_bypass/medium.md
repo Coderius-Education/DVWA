@@ -60,7 +60,7 @@ Probeer met cURL de `change_user_details.php` pagina zo aan te roepen dat je de 
 Om er een POST van de maken met JSON data, heb je 2 extra parameters nodig:
 
 `-X POST`: Om een POST request te maken<br/>
-`-d '{}`: Om data (in dit geval in JSON formaat) te sturen naar de pagina.
+`-d '{}'`: Om data (in dit geval in JSON formaat) te sturen naar de pagina.
 
 Als het is gelukt, krijg je van de change_user_details pagina het volgende terug:
 
